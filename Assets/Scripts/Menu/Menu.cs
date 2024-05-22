@@ -14,7 +14,9 @@ public class Menu : MonoBehaviour
     }
     public void Play()
     {
-        Debug.Log("Play");
+        mainMenu.SetActive(false);
+        options.SetActive(false);
+        levels.SetActive(true);
     }
 
     public void Options()
