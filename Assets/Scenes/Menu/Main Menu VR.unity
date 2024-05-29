@@ -203,7 +203,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 15754193}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 505671996}
+        m_TargetAssemblyTypeName: VolumeVR, Assembly-CSharp
+        m_MethodName: plus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &15754193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1041,6 +1053,7 @@ GameObject:
   - component: {fileID: 505671993}
   - component: {fileID: 505671995}
   - component: {fileID: 505671994}
+  - component: {fileID: 505671996}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -1108,6 +1121,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505671992}
   m_CullTransparentMesh: 1
+--- !u!114 &505671996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505671992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5218a79ca820be499301b5049cf17f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: 50
+  text: {fileID: 1310224129}
 --- !u!1 &565354306
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,7 +1320,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 641074283}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 269760464}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Options
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &641074283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1342,7 +1381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 667599752}
   m_Layer: 0
-  m_Name: Junk
+  m_Name: No borres esto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1485,7 +1524,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 707697677}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 505671996}
+        m_TargetAssemblyTypeName: VolumeVR, Assembly-CSharp
+        m_MethodName: minus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &707697677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1894,8 +1945,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199.6, y: -32.2}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 137.6, y: -32.2}
+  m_SizeDelta: {x: 150, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1310224129
 MonoBehaviour:
@@ -1982,7 +2033,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 123.065186, w: 0}
+  m_margin: {x: 0, y: 0, z: -0.3279419, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
