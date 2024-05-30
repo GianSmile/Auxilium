@@ -38,4 +38,28 @@ public class Menu : MonoBehaviour
         options.SetActive(false);
         levels.SetActive(false);
     }
+
+    public void RCP(){
+
+    }
+
+    public void ProblemasRespiratorios(){
+
+    }
+
+    public void Quemaduras(){
+
+    }
+
+    public void Intoxicaciones(){
+
+    }
+
+    public void CortesYHeridas(){
+
+    }
+
+    public void ReaccionesAlergicas(){
+
+    }
 }
