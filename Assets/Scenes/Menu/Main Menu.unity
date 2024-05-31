@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -138,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &24146529
 RectTransform:
   m_ObjectHideFlags: 0
@@ -391,7 +390,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 300083496}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 941638176}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Quemaduras
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &300083496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -859,7 +870,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 545198060}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 941638176}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: ReaccionesAlergicas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &545198060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2127,7 +2150,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1228582074}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 941638176}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: ProblemasRespiratorios
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228582074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,7 +2319,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1289732933}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 941638176}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: CortesYHeridas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1289732933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2709,7 +2756,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1815011462}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 941638176}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: Intoxicaciones
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1815011462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2763,7 +2822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1894167898
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2990,7 +3049,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2068685572}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 941638176}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: RCP
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2068685572
 MonoBehaviour:
   m_ObjectHideFlags: 0

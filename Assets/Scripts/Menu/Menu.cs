@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -40,26 +41,26 @@ public class Menu : MonoBehaviour
     }
 
     public void RCP(){
-
+        SceneManager.LoadScene("RCP");
     }
 
     public void ProblemasRespiratorios(){
-
+        SceneManager.LoadScene("Problemas respiratorios");
     }
 
     public void Quemaduras(){
-
+        SceneManager.LoadScene("Quemaduras");
     }
 
     public void Intoxicaciones(){
-
+        SceneManager.LoadScene("Intoxicaciones");
     }
 
     public void CortesYHeridas(){
-
+        SceneManager.LoadScene("Cortes y heridas");
     }
 
     public void ReaccionesAlergicas(){
-
+        SceneManager.LoadScene("Reacciones alérgicas");
     }
 }
