@@ -182,8 +182,7 @@ MonoBehaviour:
   - Abre tus ojos
   - Mira hacia arriba
   - Disfruta de las cosas buenas que tiene la-la-la-la-la-la-la-la-la-la-hey-hey
-  - 
-  skipables: 0101010101010101
+  skipables: 01010101010101
   isVR: 0
   skipE: {fileID: 752632353}
   skipTrigger: {fileID: 734882185}
