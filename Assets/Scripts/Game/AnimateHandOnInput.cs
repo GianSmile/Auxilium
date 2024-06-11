@@ -19,6 +19,5 @@ public class AnimateHandOnInput : MonoBehaviour
     {
         float triggerValue = grabAnimationAction.action.ReadValue<float>();
         handAnimatior.SetFloat("Grip", triggerValue);
-        Debug.Log(triggerValue);
     }
 }
