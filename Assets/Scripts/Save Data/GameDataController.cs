@@ -6,29 +6,30 @@ using system.IO;
 public class GameDataController : MonoBehaviour
 {
     public string saveFile;
-    public GameData gameData = new GameData();
-    public bool[] levels = {false,false,false,false,false,false};
+    public GameDataScript gameData = new GameDataScript();
+    public bool[] levels;
 
     private void Awake() {
+        levels =  = {false,false,false,false,false,false};
         DontDestroyOnLoad(gameObject);
-        archivoDeGuardado = Application.dataPath + "save.json";
+        saveFile = Application.dataPath + "/save.json";
     }
 
     private void LoadData(){
         if(File.Exists(saveFile)){
             string content = File.ReadAllText(saveFile);
-            gameData = JsonUtility.FromJson<GameData>(content);
+            gameData = JsonUtility.FromJson<GameDataScript>(content);
 
-            levels = content.levelsPassed;
+            levels = content.levelsData;
         }else{
             Debug.Log("File doesn´t exist");
         }
     }
 
     private void SaveData(){
-        GameData newData = new GameData()
+        GameDataScript newData = new GameDataScript()
         {
-            levelsPassed = levels;
+            levelsData = levels;
         };
 
         string JSONChain = JsonUtility.ToJson(newData);
