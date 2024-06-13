@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using system.IO;
+using System.IO;
 
 public class GameDataController : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class GameDataController : MonoBehaviour
     public bool[] levels;
 
     private void Awake() {
-        levels =  = {false,false,false,false,false,false};
+        levels = new bool[] { false, false, false, false, false, false };
         DontDestroyOnLoad(gameObject);
         saveFile = Application.dataPath + "/save.json";
     }
@@ -20,7 +20,7 @@ public class GameDataController : MonoBehaviour
             string content = File.ReadAllText(saveFile);
             gameData = JsonUtility.FromJson<GameDataScript>(content);
 
-            levels = content.levelsData;
+            levels = gameData.levelsData;
         }else{
             Debug.Log("File doesn´t exist");
         }
@@ -29,13 +29,12 @@ public class GameDataController : MonoBehaviour
     private void SaveData(){
         GameDataScript newData = new GameDataScript()
         {
-            levelsData = levels;
+            levelsData = levels
         };
 
         string JSONChain = JsonUtility.ToJson(newData);
 
         File.WriteAllText(saveFile, JSONChain);
-
     }
 
     private void PassLevel(int level){
