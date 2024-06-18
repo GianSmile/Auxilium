@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tutorial
+  - Controller
   layers:
   - Default
   - TransparentFX

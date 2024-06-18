@@ -10,9 +10,15 @@ public class GameDataController : MonoBehaviour
     public bool[] levels;
 
     private void Awake() {
-        levels = new bool[] { false, false, false, false, false, false };
+        levels = new bool[] { true, false, false, false, false, false };
         DontDestroyOnLoad(gameObject);
         saveFile = Application.dataPath + "/save.json";
+    }
+
+    private void Update() {
+        if(Input.GetKeyDown(KeyCode.L)){
+            LoadData();
+        }
     }
 
     private void LoadData(){
@@ -34,10 +40,12 @@ public class GameDataController : MonoBehaviour
 
         string JSONChain = JsonUtility.ToJson(newData);
 
+        Debug.Log(JSONChain);
+
         File.WriteAllText(saveFile, JSONChain);
     }
 
-    private void PassLevel(int level){
+    public void PassLevel(int level){
         levels[level] = true;
         SaveData();
     }

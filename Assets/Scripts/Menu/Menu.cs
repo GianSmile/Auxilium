@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
     public GameObject mainMenu, options, levels;
+    public Button[]buttons;
+    public GameDataController gdc;
     private void Start()
     {
+        gdc = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameDataController>();
         mainMenu.SetActive(true);
         options.SetActive(false);
         levels.SetActive(false);
@@ -62,5 +66,11 @@ public class Menu : MonoBehaviour
 
     public void ReaccionesAlergicas(){
         SceneManager.LoadScene("Reacciones alérgicas");
+    }
+
+    private void Update() {
+        for(int i = 0; i < 6; i++){
+            buttons[i].enabled = gdc.levels[i];
+        }
     }
 }
