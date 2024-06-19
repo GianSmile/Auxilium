@@ -11,6 +11,9 @@ public class GameDataController : MonoBehaviour
 
     private void Awake() {
         levels = new bool[] { true, false, false, false, false, false };
+        GameObject clon = GameObject.FindGameObjectWithTag("Controller");
+        if(clon != null)Destroy(gameObject);
+        gameObject.tag = "Controller";
         DontDestroyOnLoad(gameObject);
         saveFile = Application.dataPath + "/save.json";
     }
