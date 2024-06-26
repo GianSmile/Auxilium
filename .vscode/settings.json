@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Auxilium.sln"
+    "dotnet.defaultSolution": "Auxilium.sln",
+    "dotnet.preferCSharpExtension": true
 }
