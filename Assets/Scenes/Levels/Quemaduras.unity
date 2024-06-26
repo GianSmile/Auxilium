@@ -130,6 +130,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1550204070819967314, guid: ee6bc5541c74d9644ae4348c238f20ff, type: 3}
+      propertyPath: passLevel
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3359702699659519830, guid: ee6bc5541c74d9644ae4348c238f20ff, type: 3}
       propertyPath: m_Name
       value: Pass Level
