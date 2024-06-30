@@ -321,6 +321,7 @@ GameObject:
   - component: {fileID: 300083497}
   - component: {fileID: 300083496}
   - component: {fileID: 300083495}
+  - component: {fileID: 300083498}
   m_Layer: 5
   m_Name: Quemaduras
   m_TagString: Untagged
@@ -441,6 +442,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 300083493}
   m_CullTransparentMesh: 1
+--- !u!114 &300083498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300083493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  normal: {fileID: 21300000, guid: 8536082d9964b2c4f822b4689bcef568, type: 3}
+  disabled: {fileID: 21300000, guid: 08d45cef3c724284e956e0dd7c4d20a4, type: 3}
 --- !u!1 &323407857
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,6 +817,7 @@ GameObject:
   - component: {fileID: 545198061}
   - component: {fileID: 545198060}
   - component: {fileID: 545198059}
+  - component: {fileID: 545198062}
   m_Layer: 5
   m_Name: "Reacciones al\xE9rgicas"
   m_TagString: Untagged
@@ -921,6 +938,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 545198057}
   m_CullTransparentMesh: 1
+--- !u!114 &545198062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 545198057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  normal: {fileID: 21300000, guid: 4a261ff3da4ca5a4db17150f504f5115, type: 3}
+  disabled: {fileID: 21300000, guid: 18cfd33348bfc4c438cfb117ca6acb1e, type: 3}
 --- !u!1 &623522324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2089,6 +2121,7 @@ GameObject:
   - component: {fileID: 1228582075}
   - component: {fileID: 1228582074}
   - component: {fileID: 1228582073}
+  - component: {fileID: 1228582076}
   m_Layer: 5
   m_Name: Problemas respiratorios
   m_TagString: Untagged
@@ -2209,6 +2242,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228582071}
   m_CullTransparentMesh: 1
+--- !u!114 &1228582076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228582071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  normal: {fileID: 21300000, guid: dad38c01a52d68847ab124e5cddce50f, type: 3}
+  disabled: {fileID: 21300000, guid: 42798210c9120ec418a77b3479534386, type: 3}
 --- !u!1 &1270443738
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,6 +2306,7 @@ GameObject:
   - component: {fileID: 1289732934}
   - component: {fileID: 1289732933}
   - component: {fileID: 1289732932}
+  - component: {fileID: 1289732935}
   m_Layer: 5
   m_Name: Cortes y heridas
   m_TagString: Untagged
@@ -2378,6 +2427,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289732930}
   m_CullTransparentMesh: 1
+--- !u!114 &1289732935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289732930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  normal: {fileID: 21300000, guid: bce058a5bd10c3b41a354c44f4aa2c5f, type: 3}
+  disabled: {fileID: 21300000, guid: 42f5f9cc80d5c6f4cb06631a075c34cb, type: 3}
 --- !u!1 &1414398529
 GameObject:
   m_ObjectHideFlags: 0
@@ -2695,6 +2759,7 @@ GameObject:
   - component: {fileID: 1815011463}
   - component: {fileID: 1815011462}
   - component: {fileID: 1815011461}
+  - component: {fileID: 1815011464}
   m_Layer: 5
   m_Name: Intoxicaciones
   m_TagString: Untagged
@@ -2815,6 +2880,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1815011459}
   m_CullTransparentMesh: 1
+--- !u!114 &1815011464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815011459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  normal: {fileID: 21300000, guid: 870ebdf12daa94643977399da9626950, type: 3}
+  disabled: {fileID: 21300000, guid: 80a6220ed183a8d4d99be9f423c9e7c4, type: 3}
 --- !u!1 &1894167897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,6 +3116,7 @@ GameObject:
   - component: {fileID: 2068685573}
   - component: {fileID: 2068685572}
   - component: {fileID: 2068685571}
+  - component: {fileID: 2068685574}
   m_Layer: 5
   m_Name: RCP
   m_TagString: Untagged
@@ -3156,6 +3237,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068685569}
   m_CullTransparentMesh: 1
+--- !u!114 &2068685574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068685569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 0}
+  normal: {fileID: 21300000, guid: 813cbcfefbf84e14182d87f89de7051e, type: 3}
+  disabled: {fileID: 21300000, guid: 813cbcfefbf84e14182d87f89de7051e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
