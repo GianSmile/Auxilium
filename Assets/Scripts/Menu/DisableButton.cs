@@ -7,11 +7,12 @@ using UnityEngine.UI;
 
 public class DisableButton : MonoBehaviour
 {
-    public Button button;
-    public Sprite normal;
+    private Button button;
+    private Sprite normal;
     public Sprite disabled;
     void Start()
     {
+        normal = gameObject.GetComponent<Image>().sprite;
         button = GetComponent<Button>();
     }
 

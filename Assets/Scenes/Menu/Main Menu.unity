@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &24146529
 RectTransform:
   m_ObjectHideFlags: 0
@@ -454,8 +454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  normal: {fileID: 21300000, guid: 8536082d9964b2c4f822b4689bcef568, type: 3}
   disabled: {fileID: 21300000, guid: 08d45cef3c724284e956e0dd7c4d20a4, type: 3}
 --- !u!1 &323407857
 GameObject:
@@ -950,8 +948,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  normal: {fileID: 21300000, guid: 4a261ff3da4ca5a4db17150f504f5115, type: 3}
   disabled: {fileID: 21300000, guid: 18cfd33348bfc4c438cfb117ca6acb1e, type: 3}
 --- !u!1 &623522324
 GameObject:
@@ -2254,8 +2250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  normal: {fileID: 21300000, guid: dad38c01a52d68847ab124e5cddce50f, type: 3}
   disabled: {fileID: 21300000, guid: 42798210c9120ec418a77b3479534386, type: 3}
 --- !u!1 &1270443738
 GameObject:
@@ -2439,8 +2433,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  normal: {fileID: 21300000, guid: bce058a5bd10c3b41a354c44f4aa2c5f, type: 3}
   disabled: {fileID: 21300000, guid: 42f5f9cc80d5c6f4cb06631a075c34cb, type: 3}
 --- !u!1 &1414398529
 GameObject:
@@ -2892,8 +2884,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  normal: {fileID: 21300000, guid: 870ebdf12daa94643977399da9626950, type: 3}
   disabled: {fileID: 21300000, guid: 80a6220ed183a8d4d99be9f423c9e7c4, type: 3}
 --- !u!1 &1894167897
 GameObject:
@@ -2910,7 +2900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1894167898
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3249,8 +3239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  button: {fileID: 0}
-  normal: {fileID: 21300000, guid: 813cbcfefbf84e14182d87f89de7051e, type: 3}
   disabled: {fileID: 21300000, guid: 813cbcfefbf84e14182d87f89de7051e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

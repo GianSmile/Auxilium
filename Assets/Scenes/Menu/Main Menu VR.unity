@@ -303,8 +303,9 @@ GameObject:
   - component: {fileID: 135182959}
   - component: {fileID: 135182958}
   - component: {fileID: 135182960}
+  - component: {fileID: 135182961}
   m_Layer: 5
-  m_Name: Enfermedades respiratorias
+  m_Name: RCP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,7 +350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 31208007d2cea5b48a8dfddf2879a1cd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 802e2b8b26528bb49b271f4122af204c, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -413,7 +414,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 648099400}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: ProblemasRespiratorios
+        m_MethodName: RCP
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -423,6 +424,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &135182961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135182956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: {fileID: 21300000, guid: 802e2b8b26528bb49b271f4122af204c, type: 3}
 --- !u!1 &224428543
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,8 +829,8 @@ MonoBehaviour:
   options: {fileID: 85598051}
   levels: {fileID: 1928569150}
   buttons:
-  - {fileID: 1146722571}
   - {fileID: 135182960}
+  - {fileID: 1146722571}
   - {fileID: 1490927529}
   - {fileID: 1900816066}
   - {fileID: 1894857046}
@@ -1245,6 +1259,54 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -20}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1018226853
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1018226855}
+  - component: {fileID: 1018226854}
+  m_Layer: 0
+  m_Name: Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1018226854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018226853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c86a8a98104461f499c6a208eb69c008, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  saveFile: 
+  gameData:
+    levelsData: 
+  levels: 
+--- !u!4 &1018226855
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1018226853}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 386.43655, y: 266.87613, z: 1.8424261}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028692321
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,8 +1527,9 @@ GameObject:
   - component: {fileID: 1146722570}
   - component: {fileID: 1146722569}
   - component: {fileID: 1146722571}
+  - component: {fileID: 1146722572}
   m_Layer: 5
-  m_Name: RCP
+  m_Name: Problemas respiratorios
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1511,7 +1574,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 37f1b54a2ecafcd418500177c7481636, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8e12173abda23a47baa348e24bad9c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1575,7 +1638,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 648099400}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: RCP
+        m_MethodName: ProblemasRespiratorios
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1585,6 +1648,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1146722572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1146722567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: {fileID: 21300000, guid: ac6c1b690ce178f45a8d1a39bc8cf428, type: 3}
 --- !u!1 &1188128459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,6 +2059,7 @@ GameObject:
   - component: {fileID: 1490927528}
   - component: {fileID: 1490927527}
   - component: {fileID: 1490927529}
+  - component: {fileID: 1490927530}
   m_Layer: 5
   m_Name: Quemaduras
   m_TagString: Untagged
@@ -2103,6 +2180,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1490927530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1490927525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: {fileID: 21300000, guid: 8e008049b1cd0174f89697f9dd7b2640, type: 3}
 --- !u!1 &1627398069
 GameObject:
   m_ObjectHideFlags: 0
@@ -2427,6 +2517,7 @@ GameObject:
   - component: {fileID: 1900816065}
   - component: {fileID: 1900816064}
   - component: {fileID: 1900816066}
+  - component: {fileID: 1900816067}
   m_Layer: 5
   m_Name: Intoxicaciones
   m_TagString: Untagged
@@ -2547,6 +2638,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1900816067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900816062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: {fileID: 21300000, guid: 066af1a6dfedf6143a80ad8326d841bb, type: 3}
 --- !u!1 &1928569150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,3 +2833,4 @@ SceneRoots:
   - {fileID: 667599752}
   - {fileID: 648099403}
   - {fileID: 1847931083}
+  - {fileID: 1018226855}
