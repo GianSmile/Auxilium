@@ -11,6 +11,7 @@ public class PassLevel : MonoBehaviour
 
     private void Start() {
         gdc = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameDataController>();
+        Debug.Log(SceneManager.GetActiveScene().name);
     }
     void Update()
     {
@@ -20,7 +21,7 @@ public class PassLevel : MonoBehaviour
 
             if(passLevel != 0)
             {
-                gdc.PassLevel(1);
+                gdc.PassLevel(passLevel);
             }
         }
     }

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1550204070819967314}
   m_Layer: 0
   m_Name: Pass Level
-  m_TagString: Untagged
+  m_TagString: Pass Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isVR: 0
-  gdc: {fileID: 0}
+  passLevel: 0

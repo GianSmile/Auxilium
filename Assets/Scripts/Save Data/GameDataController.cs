@@ -8,6 +8,8 @@ public class GameDataController : MonoBehaviour
     public string saveFile;
     public GameDataScript gameData = new GameDataScript();
     public bool[] levels;
+    public bool isVR;
+    private PassLevel pl;
 
     private void Awake() {
         levels = new bool[] { true, false, false, false, false, false };
@@ -22,6 +24,8 @@ public class GameDataController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.L)){
             LoadData();
         }
+        pl = GameObject.FindGameObjectWithTag("Pass Level").GetComponent<PassLevel>();
+        pl.isVR = isVR;
     }
 
     private void LoadData(){

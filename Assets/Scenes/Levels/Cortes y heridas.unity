@@ -317,6 +317,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1550204070819967314, guid: ee6bc5541c74d9644ae4348c238f20ff, type: 3}
+      propertyPath: isVR
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1550204070819967314, guid: ee6bc5541c74d9644ae4348c238f20ff, type: 3}
       propertyPath: passLevel
       value: 5
       objectReference: {fileID: 0}
