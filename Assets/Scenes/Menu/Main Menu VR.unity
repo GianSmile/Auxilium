@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 42194966}
   - component: {fileID: 42194965}
   - component: {fileID: 42194964}
+  - component: {fileID: 42194968}
   m_Layer: 5
   m_Name: "Reacciones al\xE9rgicas"
   m_TagString: Untagged
@@ -254,6 +255,19 @@ RectTransform:
   m_AnchoredPosition: {x: -172, y: 135}
   m_SizeDelta: {x: 170, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &42194968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 42194963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: {fileID: 21300000, guid: 5064d7e13726cac47a69cb90478672a5, type: 3}
 --- !u!1 &85598051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1098,6 +1112,7 @@ GameObject:
   - component: {fileID: 441047153}
   - component: {fileID: 441047152}
   - component: {fileID: 441047151}
+  - component: {fileID: 441047155}
   m_Layer: 5
   m_Name: Cortes y heridas
   m_TagString: Untagged
@@ -1218,6 +1233,19 @@ RectTransform:
   m_AnchoredPosition: {x: -173, y: -84}
   m_SizeDelta: {x: 170, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &441047155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 441047150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3990644d371c18743b06e165810d3db0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  disabled: {fileID: 21300000, guid: 907b362e88a9aa64782e32653e7b0cb7, type: 3}
 --- !u!1 &648099399
 GameObject:
   m_ObjectHideFlags: 0
