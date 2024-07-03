@@ -21,14 +21,17 @@ public class GameDataController : MonoBehaviour
     }
 
     private void Update() {
+        //Cargamos los datos guardados al apretar L
         if(Input.GetKeyDown(KeyCode.L)){
             LoadData();
         }
+        //Buscamos el "Pass Level" del nivel y nos asgeuramos de que el bool isVR sea igual al del "Controller" para que al ganar el nivel, nos lleve al menú correcto
         pl = GameObject.FindGameObjectWithTag("Pass Level").GetComponent<PassLevel>();
         pl.isVR = isVR;
     }
 
     private void LoadData(){
+        //Cargar los datos
         if(File.Exists(saveFile)){
             string content = File.ReadAllText(saveFile);
             gameData = JsonUtility.FromJson<GameDataScript>(content);
@@ -40,6 +43,7 @@ public class GameDataController : MonoBehaviour
     }
 
     private void SaveData(){
+        //Guardar los datos
         GameDataScript newData = new GameDataScript()
         {
             levelsData = levels
@@ -52,7 +56,8 @@ public class GameDataController : MonoBehaviour
         File.WriteAllText(saveFile, JSONChain);
     }
 
-    public void PassLevel(int level){
+    public void UnlockLevel(int level){
+        //Desbloquear nivel y guardar la partida
         levels[level] = true;
         SaveData();
     }

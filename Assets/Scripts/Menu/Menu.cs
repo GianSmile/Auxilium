@@ -69,6 +69,7 @@ public class Menu : MonoBehaviour
     }
 
     private void Update() {
+        //Bloquear los botones de los niveles bloqueados
         for(int i = 0; i < 6; i++){
             buttons[i].enabled = gdc.levels[i];
         }
