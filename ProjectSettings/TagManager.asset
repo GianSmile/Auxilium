@@ -4,9 +4,17 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - Tutorial
   - Controller
   - Pass Level
+=======
+  - Left Hand
+  - Right Hand
+  - Hold On
+  - Botiquin
+  - Persona
+>>>>>>> EspacioCreativo
   layers:
   - Default
   - TransparentFX
