@@ -8,8 +8,7 @@ public class CPRScript : MonoBehaviour
     public bool handsBackUp = true;    //registers when hands come back up after compressing
     //public float depth;     //how low do you need to go needs to be fix acording to red cross preferences
     public float heightRange;   //how tall should the range be from body (does not affect its size)
-    [Range(0, 10)] public float range;     //a range were you can perform cpr in the body fix!!
-    private int compressions = 0;    //the amount of compressions this value will be displayed on canvas
+    public int compressions = 0;    //the amount of compressions this value will be displayed on canvas
     private GameObject handModel;   //the model of the hand
     public Transform target;    //your invisible hand in the space
     private Transform originalPosition;     //the position desired for the hands to be when they come back
@@ -65,6 +64,7 @@ public class CPRScript : MonoBehaviour
             {
                 handsBackUp = true;
                 CalculateBPM();
+                compressions++;
             }
             else if (target.position.y <= 0.20f)
             {
