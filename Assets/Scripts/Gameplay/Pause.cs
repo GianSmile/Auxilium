@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Pause : MonoBehaviour
 {
+    public GameObject pausePanel;
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -11,10 +12,12 @@ public class Pause : MonoBehaviour
             if(Time.timeScale == 1)
             {
                 Time.timeScale = 0;
+                pausePanel.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
+                pausePanel.SetActive(false);
             }
         }
     }
