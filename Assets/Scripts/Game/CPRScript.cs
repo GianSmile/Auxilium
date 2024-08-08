@@ -12,6 +12,8 @@ public class CPRScript : MonoBehaviour
     private GameObject handModel;   //the model of the hand
     public Transform target;    //your invisible hand in the space
     private Transform originalPosition;     //the position desired for the hands to be when they come back
+    public Transform start;
+    public Transform end;
 
     private float lastActionTime;
     private float currentActionTime;
@@ -60,13 +62,13 @@ public class CPRScript : MonoBehaviour
         }
         if (handsOnBody)
         {
-            if (target.position.y >= 0.27f && handsBackUp == false)
+            if (target.position.y >= start.position.y && handsBackUp == false)
             {
                 handsBackUp = true;
                 CalculateBPM();
                 compressions++;
             }
-            else if (target.position.y <= 0.20f)
+            else if (target.position.y <= end.position.y)
             {
                 handsBackUp = false;
             }
