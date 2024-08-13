@@ -27,7 +27,7 @@ public class Tutorial : MonoBehaviour
         }
     }
 
-    void Change()
+    public void Change()
     {
         i++;
         if(i >= texts.Length){
