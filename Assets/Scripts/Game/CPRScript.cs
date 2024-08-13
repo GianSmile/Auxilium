@@ -6,10 +6,12 @@ public class CPRScript : MonoBehaviour
 {
     public bool handsOnBody;    //registers if hands are in position still unusable
     public bool handsBackUp = true;    //registers when hands come back up after compressing
+    public bool headOnPosition;     //registers if head is in good position
     //public float depth;     //how low do you need to go needs to be fix acording to red cross preferences
     public float heightRange;   //how tall should the range be from body (does not affect its size)
     public int compressions = 0;    //the amount of compressions this value will be displayed on canvas
     private GameObject handModel;   //the model of the hand
+    public Transform head;     //the head transform of the person used to adjust its rotation
     public Transform target;    //your invisible hand in the space
     private Transform originalPosition;     //the position desired for the hands to be when they come back
     public Transform start;
@@ -23,6 +25,7 @@ public class CPRScript : MonoBehaviour
     private void Awake()
     {
         handModel = GameObject.Find("r_hand_skeletal_lowres");
+        head = GameObject.FindGameObjectWithTag("Head").GetComponent<Transform>();
 
         lastActionTime = 0f;
         currentActionTime = 0f;
@@ -32,6 +35,8 @@ public class CPRScript : MonoBehaviour
     void Update()
     {
         originalPosition = GameObject.Find("TruePositionRightHand").GetComponent<Transform>();
+
+        Debug.Log("Head rotation: " + head.rotation.x);
 
         /*float distance = Vector3.Distance(transform.position, target.position);
         if (distance <= range)
@@ -56,9 +61,18 @@ public class CPRScript : MonoBehaviour
             Debug.Log("Object out of range.");
             handModel.transform.position = originalPosition.position;
         }*/
+        if (head.rotation.x <= -23f)
+        {
+            Debug.Log("Head in position."); 
+            headOnPosition = true;
+        }
+        else
+        {
+            headOnPosition = false;
+        }
         if (handsOnBody == false)
         {
-            Debug.Log("Object out of range.");
+            //Debug.Log("Object out of range.");
         }
         if (handsOnBody)
         {
@@ -77,7 +91,7 @@ public class CPRScript : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Right Hand")
+        if (other.gameObject.tag == "Right Hand" && headOnPosition)
         {
             handsOnBody = true;
             Debug.Log("Object within range.");
@@ -87,7 +101,7 @@ public class CPRScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Right Hand")
+        if (other.gameObject.tag == "Right Hand" && headOnPosition)
         {
             handsOnBody = false;
             handModel.transform.position = originalPosition.position;
