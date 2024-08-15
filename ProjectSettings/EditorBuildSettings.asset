@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: "Assets/Scenes/Levels/Reacciones al\xE9rgicas.unity"
     guid: 58146ca7a1f9ad9428394a4a24460fb4
+  - enabled: 1
+    path: Assets/Scenes/Escenario.unity
+    guid: 59a2b78f092cf5648a12b22ef8a2f6e7
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 0eac92bb2395f5c4d965d5f6cabae7bd, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: e81981c95351f5b43905da7f58e4ae78, type: 2}

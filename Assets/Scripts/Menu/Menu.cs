@@ -19,9 +19,10 @@ public class Menu : MonoBehaviour
     }
     public void Play()
     {
-        mainMenu.SetActive(false);
+        /*mainMenu.SetActive(false);
         options.SetActive(false);
-        levels.SetActive(true);
+        levels.SetActive(true);*/
+        SceneManager.LoadScene("Escenario");
     }
 
     public void Options()
