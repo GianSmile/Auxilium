@@ -4,16 +4,18 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class ChangeTextBySlide : MonoBehaviour
 {
-    public TextMeshProUGUI textToChangeSlide;
-    public int slideValue;
+    [SerializeField] private TextMeshProUGUI textToChangeSlide;
+    [SerializeField] private Slider slideValue;
 
     private void Update()
     {
-        //slideValue = GameObject.Find("Test UI").GetComponent<Slider>().value;
+        slideValue.onValueChanged.AddListener((v) =>
+        {
+            textToChangeSlide.text = v.ToString("0.00");
+        });
     }
 
     public void ValueChange()

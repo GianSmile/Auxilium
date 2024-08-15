@@ -4,27 +4,22 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - Tutorial
-  - Controller
-  - Pass Level
-=======
   - Left Hand
   - Right Hand
   - Hold On
   - Botiquin
   - Persona
->>>>>>> EspacioCreativo
+  - Head
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Character
   - Water
   - UI
-  - UI2
+  - Hands
   - 
-  - 
+  - No self collision
   - 
   - 
   - 
