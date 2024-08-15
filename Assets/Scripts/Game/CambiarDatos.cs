@@ -10,17 +10,21 @@ public class CambiarDatos : MonoBehaviour
     public TextMeshProUGUI handsOnData;
     public TextMeshProUGUI bpmData;
     public TextMeshProUGUI compressionData;
+    public TextMeshProUGUI headData;
     private bool handsOn;
     private float bpmNumb;
     private int compressions;
+    private bool headOnPosition;
 
     private void Update()
     {
         handsOn = cprScript.handsOnBody;
         bpmNumb = cprScript.bpm;
+        headOnPosition = cprScript.headOnPosition;
         compressions = cprScript.compressions;
         handsOnData.text = "Manos en posicion: " + handsOn;
         bpmData.text = "BPM: " + bpmNumb.ToString("F2");
         compressionData.text = "Cantidad de compresiones: " + compressions.ToString();
+        headData.text = "Cabeza en posicion: " + headOnPosition;
     }
 }

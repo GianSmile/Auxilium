@@ -36,7 +36,7 @@ public class CPRScript : MonoBehaviour
     {
         originalPosition = GameObject.Find("TruePositionRightHand").GetComponent<Transform>();
 
-        Debug.Log("Head rotation: " + head.rotation.x);
+        Debug.Log("Head rotation: " + head.rotation.eulerAngles.x);
 
         /*float distance = Vector3.Distance(transform.position, target.position);
         if (distance <= range)
@@ -61,7 +61,7 @@ public class CPRScript : MonoBehaviour
             Debug.Log("Object out of range.");
             handModel.transform.position = originalPosition.position;
         }*/
-        if (head.rotation.x <= -23f)
+        if (head.rotation.eulerAngles.x >= 330f)
         {
             Debug.Log("Head in position."); 
             headOnPosition = true;
