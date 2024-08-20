@@ -638,7 +638,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3774642100856332324, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 505361118}
   m_SourcePrefab: {fileID: 100100000, guid: c72863deec1181642a02070a9f61bb81, type: 3}
 --- !u!1 &181807312
 GameObject:
@@ -1360,6 +1363,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+--- !u!1 &505361114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3774642100856332324, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+  m_PrefabInstance: {fileID: 160220930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &505361118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505361114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cbeb3ecab9e36e468f1baaf05f0456e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainMenu: {fileID: 667599751}
+  options: {fileID: 85598051}
+  levels: {fileID: 1928569150}
+  buttons: []
+  gdc: {fileID: 0}
 --- !u!1 &667599751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +2726,7 @@ GameObject:
   - component: {fileID: 1847931082}
   - component: {fileID: 1847931081}
   - component: {fileID: 1847931080}
+  - component: {fileID: 1847931084}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2793,6 +2819,25 @@ RectTransform:
   m_AnchoredPosition: {x: -255.6, y: 4}
   m_SizeDelta: {x: 1026, y: 413}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1847931084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847931079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7951c64acb0fa62458bf30a60089fe2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 0
+  m_CheckFor2DOcclusion: 0
+  m_CheckFor3DOcclusion: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RaycastTriggerInteraction: 1
 --- !u!1 &1928569150
 GameObject:
   m_ObjectHideFlags: 0
@@ -2916,7 +2961,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 505361118}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
