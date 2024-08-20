@@ -2663,9 +2663,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6957598297391793588, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1780393477}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+--- !u!4 &656176556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6957598297391793588, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+  m_PrefabInstance: {fileID: 656176555}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &658666014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5673,6 +5681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 6494456310986091145, guid: 99969ac8989bf5f4fbd3a7d6760e4ff9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6503,7 +6515,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1780393476
 Canvas:
   m_ObjectHideFlags: 0
@@ -6513,7 +6525,7 @@ Canvas:
   m_GameObject: {fileID: 1780393473}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 2
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -6534,19 +6546,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780393473}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.89}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1596202810}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 656176556}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 758, y: 519}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1804911964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7551,6 +7563,5 @@ SceneRoots:
   - {fileID: 824859171}
   - {fileID: 1454819473}
   - {fileID: 2011403895}
-  - {fileID: 1780393477}
   - {fileID: 1495062309}
   - {fileID: 656176555}

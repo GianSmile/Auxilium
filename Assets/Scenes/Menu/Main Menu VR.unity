@@ -186,7 +186,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: ReaccionesAlergicas
         m_Mode: 1
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
@@ -501,7 +501,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Intoxicaciones
         m_Mode: 1
@@ -583,6 +583,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disabled: {fileID: 21300000, guid: 066af1a6dfedf6143a80ad8326d841bb, type: 3}
+--- !u!1001 &160220930
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3774642100856332324, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_Name
+      value: EventSystem
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5453992228481080326, guid: c72863deec1181642a02070a9f61bb81, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c72863deec1181642a02070a9f61bb81, type: 3}
 --- !u!1 &181807312
 GameObject:
   m_ObjectHideFlags: 0
@@ -647,7 +704,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Quemaduras
         m_Mode: 1
@@ -925,7 +982,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: ProblemasRespiratorios
         m_Mode: 1
@@ -1164,7 +1221,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: CortesYHeridas
         m_Mode: 1
@@ -1246,98 +1303,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disabled: {fileID: 21300000, guid: 907b362e88a9aa64782e32653e7b0cb7, type: 3}
---- !u!1 &648099399
-GameObject:
+--- !u!1001 &475846686
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 648099403}
-  - component: {fileID: 648099402}
-  - component: {fileID: 648099401}
-  - component: {fileID: 648099400}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &648099400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648099399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6cbeb3ecab9e36e468f1baaf05f0456e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainMenu: {fileID: 667599751}
-  options: {fileID: 85598051}
-  levels: {fileID: 1928569150}
-  buttons:
-  - {fileID: 1121389263}
-  - {fileID: 378088154}
-  - {fileID: 181807313}
-  - {fileID: 148674529}
-  - {fileID: 441047151}
-  - {fileID: 42194964}
-  gdc: {fileID: 0}
---- !u!114 &648099401
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648099399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
---- !u!114 &648099402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648099399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &648099403
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 648099399}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -255.56714
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5000601
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -269.3317
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4192054234818237667, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4850073618535519223, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_Name
+      value: XR Origin (XR Rig)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
 --- !u!1 &667599751
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,7 +1969,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Options
         m_Mode: 1
@@ -2136,7 +2158,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: RCP
         m_Mode: 1
@@ -2894,7 +2916,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 648099400}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 1
@@ -2951,7 +2973,8 @@ SceneRoots:
   - {fileID: 717481894}
   - {fileID: 1235098265}
   - {fileID: 667599752}
-  - {fileID: 648099403}
   - {fileID: 1847931083}
   - {fileID: 1018226855}
   - {fileID: 1026942173}
+  - {fileID: 160220930}
+  - {fileID: 475846686}
