@@ -9,6 +9,7 @@ public class Menu : MonoBehaviour
     public GameObject mainMenu, options, levels;
     public Button[]buttons;
     public GameDataController gdc;
+    private bool isOptionsOn = false;
     private void Start()
     {
         gdc = GameObject.FindGameObjectWithTag("Controller").GetComponent<GameDataController>();
@@ -27,9 +28,18 @@ public class Menu : MonoBehaviour
 
     public void Options()
     {
-        mainMenu.SetActive(false);
-        options.SetActive(true);
-        levels.SetActive(false);
+        if(!isOptionsOn){
+            mainMenu.SetActive(false);
+            options.SetActive(true);
+            levels.SetActive(false);
+            isOptionsOn = true;
+        }else{
+            mainMenu.SetActive(true);
+            options.SetActive(false);
+            levels.SetActive(false);
+            isOptionsOn = false;
+        }
+        
     }
 
     public void Quit()
