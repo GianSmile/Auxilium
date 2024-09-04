@@ -1,0 +1,34 @@
+{
+    "name": "Custom input",
+    "maps": [
+        {
+            "name": "Left controler Interaction",
+            "id": "848e9b81-f979-4b5d-be93-6291f0ce075f",
+            "actions": [
+                {
+                    "name": "Pause",
+                    "type": "Button",
+                    "id": "cde86982-2128-4d01-b81e-f06e1922dfb6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "288b8055-cf03-4634-8efb-6193627d0adc",
+                    "path": "<ViveController>/menu",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

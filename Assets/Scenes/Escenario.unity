@@ -2739,13 +2739,67 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6957598297391793588, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1780393477}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4850073618535519223, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 656176558}
   m_SourcePrefab: {fileID: 100100000, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
 --- !u!4 &656176556 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6957598297391793588, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
   m_PrefabInstance: {fileID: 656176555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &656176557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4850073618535519223, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+  m_PrefabInstance: {fileID: 656176555}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &656176558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656176557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 7429285ac1407a448b1560dc820ecc78, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2011403896}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: cde86982-2128-4d01-b81e-f06e1922dfb6
+    m_ActionName: Left controler Interaction/Pause
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Left controler Interaction
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!1001 &658666014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7704,6 +7758,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08d4d67499fc86343a6d1675799a1a2c, type: 3}
+--- !u!1 &2011403896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6665019524467067839, guid: 08d4d67499fc86343a6d1675799a1a2c, type: 3}
+  m_PrefabInstance: {fileID: 2011403895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2094835759
 GameObject:
   m_ObjectHideFlags: 0
