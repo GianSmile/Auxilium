@@ -5,20 +5,18 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     public GameObject pausePanel;
-    void Update()
+
+    public void PauseMenu()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Time.timeScale == 1)
         {
-            if(Time.timeScale == 1)
-            {
-                Time.timeScale = 0;
-                pausePanel.SetActive(true);
-            }
-            else
-            {
-                Time.timeScale = 1;
-                pausePanel.SetActive(false);
-            }
+            Time.timeScale = 0;
+            pausePanel.SetActive(true);
+        }
+        else
+        {
+            Time.timeScale = 1;
+            pausePanel.SetActive(false);
         }
     }
 }
