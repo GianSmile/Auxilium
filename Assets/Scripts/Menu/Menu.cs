@@ -39,7 +39,7 @@ public class Menu : MonoBehaviour
             levels.SetActive(false);
             isOptionsOn = false;
         }
-        
+ 
     }
 
     public void Quit()

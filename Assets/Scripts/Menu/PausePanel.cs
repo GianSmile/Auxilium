@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PausePanel : MonoBehaviour
 {
+    private bool isOptionsOn = false;
     public GameObject options;
     public void Resume(){
         Time.timeScale = 1;
@@ -23,6 +24,15 @@ public class PausePanel : MonoBehaviour
         SceneManager.LoadScene("Main Menu VR");
     }
     public void Options(){
-        options.SetActive(true);
+        if (!isOptionsOn)
+        {
+            options.SetActive(true);
+            isOptionsOn = true;
+        }
+        else
+        {
+            options.SetActive(false);
+            isOptionsOn = false;
+        }
     }
 }
