@@ -7,6 +7,7 @@ public class CPRScript : MonoBehaviour
     public bool handsOnBody;    //registers if hands are in position still unusable
     public bool handsBackUp = true;    //registers when hands come back up after compressing
     public bool headOnPosition;     //registers if head is in good position
+    public bool checkedBreathing;   //Registers if the person has lowered their head to check breathing
     //public float depth;     //how low do you need to go needs to be fix acording to red cross preferences
     public float heightRange;   //how tall should the range be from body (does not affect its size)
     public int compressions = 0;    //the amount of compressions this value will be displayed on canvas
