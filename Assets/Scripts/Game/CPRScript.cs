@@ -12,6 +12,7 @@ public class CPRScript : MonoBehaviour
     public float heightRange;   //how tall should the range be from body (does not affect its size)
     public int compressions = 0;    //the amount of compressions this value will be displayed on canvas
     private GameObject handModel;   //the model of the hand
+    private GameObject bodyHead;    //the head of the person
     public Transform head;     //the head transform of the person used to adjust its rotation
     public Transform target;    //your invisible hand in the space
     private Transform originalPosition;     //the position desired for the hands to be when they come back
@@ -27,6 +28,7 @@ public class CPRScript : MonoBehaviour
     {
         handModel = GameObject.Find("r_hand_skeletal_lowres");
         head = GameObject.FindGameObjectWithTag("Head").GetComponent<Transform>();
+        bodyHead = GameObject.FindGameObjectWithTag("Ears");
 
         lastActionTime = 0f;
         currentActionTime = 0f;
@@ -62,6 +64,10 @@ public class CPRScript : MonoBehaviour
             Debug.Log("Object out of range.");
             handModel.transform.position = originalPosition.position;
         }*/
+        if (bodyHead.gameObject.GetComponent<HeadCollision>().ended == true)
+        {
+            checkedBreathing = true;
+        }
         if (head.rotation.eulerAngles.x >= 330f)
         {
             Debug.Log("Head in position."); 

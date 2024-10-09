@@ -6,7 +6,7 @@ public class HeadCollision : MonoBehaviour
 {
     public bool ended; 
     // Start is called before the first frame update
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.tag == "Head") 
         {
