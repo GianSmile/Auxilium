@@ -98,7 +98,7 @@ public class CPRScript : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag == "Right Hand" && headOnPosition)
+        if (other.gameObject.tag == "Right Hand" /*&& headOnPosition*/)
         {
             handsOnBody = true;
             Debug.Log("Object within range.");
@@ -108,7 +108,7 @@ public class CPRScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "Right Hand" && headOnPosition)
+        if (other.gameObject.tag == "Right Hand" /*&& headOnPosition*/)
         {
             handsOnBody = false;
             handModel.transform.position = originalPosition.position;

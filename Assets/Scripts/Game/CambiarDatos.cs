@@ -11,10 +11,12 @@ public class CambiarDatos : MonoBehaviour
     public TextMeshProUGUI bpmData;
     public TextMeshProUGUI compressionData;
     public TextMeshProUGUI headData;
+    public TextMeshProUGUI breathingData;
     private bool handsOn;
     private float bpmNumb;
     private int compressions;
     private bool headOnPosition;
+    private bool breathing;
 
     private void Update()
     {
@@ -22,9 +24,11 @@ public class CambiarDatos : MonoBehaviour
         bpmNumb = cprScript.bpm;
         headOnPosition = cprScript.headOnPosition;
         compressions = cprScript.compressions;
+        breathing = cprScript.checkedBreathing;
         handsOnData.text = "Manos en posicion: " + handsOn;
         bpmData.text = "BPM: " + bpmNumb.ToString("F2");
         compressionData.text = "Cantidad de compresiones: " + compressions.ToString();
         headData.text = "Cabeza en posicion: " + headOnPosition;
+        breathingData.text = "Checkeo respiracion: " + breathing;
     }
 }
