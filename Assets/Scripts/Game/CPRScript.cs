@@ -8,8 +8,10 @@ public class CPRScript : MonoBehaviour
     public bool handsBackUp = true;    //registers when hands come back up after compressing
     public bool headOnPosition;     //registers if head is in good position
     public bool checkedBreathing;   //Registers if the person has lowered their head to check breathing
+    public bool mesNotDoneCorrectly;
     //public float depth;     //how low do you need to go needs to be fix acording to red cross preferences
     public float heightRange;   //how tall should the range be from body (does not affect its size)
+    public float averageBPM;
     public int compressions = 0;    //the amount of compressions this value will be displayed on canvas
     private GameObject handModel;   //the model of the hand
     private GameObject bodyHead;    //the head of the person
@@ -23,6 +25,8 @@ public class CPRScript : MonoBehaviour
     private float currentActionTime;
     private float timeInterval;
     public float bpm;
+
+    private List<float> bpmValues = new List<float>();
 
     private void Awake()
     {
@@ -94,6 +98,12 @@ public class CPRScript : MonoBehaviour
                 handsBackUp = false;
             }
         }
+        if (compressions >= 1 && checkedBreathing == false && headOnPosition == false || compressions >= 1 && checkedBreathing == false || compressions >= 1 && headOnPosition == false)
+        {
+            mesNotDoneCorrectly = true;
+        }
+
+        averageBPM = GetAverageBpm();
     }
 
     private void OnTriggerStay(Collider other)
@@ -132,9 +142,33 @@ public class CPRScript : MonoBehaviour
             if (timeInterval > 0)
             {
                 bpm = 60f / timeInterval;
+                AddBpm(bpm);
             }
         }
 
         lastActionTime = currentActionTime;
     }
+
+    public void AddBpm(float bpm)
+    {
+        bpmValues.Add(bpm);
+    }
+
+    public float GetAverageBpm()
+    {
+        if (bpmValues.Count == 0)
+        {
+            return 0; // Evita dividir por 0
+        }
+
+        float totalBpm = 0;
+
+        foreach (float bpm in bpmValues)
+        {
+            totalBpm += bpm;
+        }
+
+        return totalBpm / bpmValues.Count;
+    }
 }
+

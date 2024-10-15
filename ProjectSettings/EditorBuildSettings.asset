@@ -5,28 +5,28 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Menu/Main Menu.unity
     guid: ff63874c4f2416f41ad0710b17a94917
   - enabled: 1
     path: Assets/Scenes/Menu/Main Menu VR.unity
     guid: 6a9c2406bd3e975449609a726598c8d8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Cortes y heridas.unity
     guid: f8c6b9e33d93320469fb52e442489a34
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Intoxicaciones.unity
     guid: 5fc04937e6ba46d408e80da6070549a1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Problemas respiratorios.unity
     guid: 1621b348cdc0d994588939465486a756
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/Quemaduras.unity
     guid: ef5296b3df73df249a048c5afdab72e0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Levels/RCP.unity
     guid: 4956ffd5c0f41474585c7cc418693e10
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Levels/Reacciones al\xE9rgicas.unity"
     guid: 58146ca7a1f9ad9428394a4a24460fb4
   - enabled: 1

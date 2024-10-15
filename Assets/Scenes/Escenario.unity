@@ -3397,7 +3397,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -190}
+  m_AnchoredPosition: {x: 0, y: 16}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &745946462
@@ -6771,7 +6771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2533702918690409624, guid: 9dccab2ac91247a4f89016236db3c698, type: 3}
       propertyPath: m_text
-      value: Datos de RCP (figma)
+      value: Datos de RCP
       objectReference: {fileID: 0}
     - target: {fileID: 2602644649972570531, guid: 9dccab2ac91247a4f89016236db3c698, type: 3}
       propertyPath: m_PresetInfoIsWorld
@@ -6785,6 +6785,22 @@ PrefabInstance:
       propertyPath: breathingData
       value: 
       objectReference: {fileID: 745946462}
+    - target: {fileID: 5819271657942145104, guid: 9dccab2ac91247a4f89016236db3c698, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -122
+      objectReference: {fileID: 0}
+    - target: {fileID: 5905207660471404798, guid: 9dccab2ac91247a4f89016236db3c698, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7775647343124221728, guid: 9dccab2ac91247a4f89016236db3c698, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8128601893148069126, guid: 9dccab2ac91247a4f89016236db3c698, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -190
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

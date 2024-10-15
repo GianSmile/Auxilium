@@ -20,7 +20,7 @@ public class HeadCollision : MonoBehaviour
 
     IEnumerator Temporizador()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         ended = true;
     }
 }
