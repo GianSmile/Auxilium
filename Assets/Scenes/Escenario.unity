@@ -2758,6 +2758,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 493587657705536888, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 127
+      objectReference: {fileID: 0}
     - target: {fileID: 543403778937215844, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.25
@@ -2813,6 +2817,10 @@ PrefabInstance:
     - target: {fileID: 4850073618535519223, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
       propertyPath: m_Name
       value: XR Origin (XR Rig)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5888374954923387317, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 127
       objectReference: {fileID: 0}
     - target: {fileID: 8719237782416997351, guid: a6621352845cbee4e82065f16f73e2bc, type: 3}
       propertyPath: m_LocalPosition.z
