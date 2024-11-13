@@ -98,7 +98,7 @@ public class CPRScript : MonoBehaviour
                 handsBackUp = false;
             }
         }
-        if (compressions >= 1 && checkedBreathing == false && headOnPosition == false || compressions >= 1 && checkedBreathing == false || compressions >= 1 && headOnPosition == false)
+        if (compressions >= 1 && checkedBreathing == false && headOnPosition == false || compressions >= 1 && checkedBreathing == false || compressions >= 1 && headOnPosition == false || checkedBreathing == false && headOnPosition == false)
         {
             mesNotDoneCorrectly = true;
         }

@@ -53,9 +53,14 @@ public class CambiarDatos : MonoBehaviour
             bpmData.text = "Compresiones por minuto: " + cprScript.averageBPM.ToString("F2") + " (Ideal: 100 - 120)";
         }
 
-        StartCoroutine(Tiempo());
+        //StartCoroutine(Tiempo());
 
         if (Input.GetKeyDown(KeyCode.C))
+        {
+            gameEnded = true;
+        }
+
+        if (cprScript.compressions >= 40)
         {
             gameEnded = true;
         }
